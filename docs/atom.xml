@@ -2,13 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
 <id>https://ricardogj08.github.io/blog/atom.xml</id>
 <title>La bitácora de un Ñu</title>
-<updated>2022-02-04T16:52:41Z</updated>
+<updated>2022-02-06T23:20:15Z</updated>
 <author>
   <name>La bitácora de un Ñu</name>
 </author>
 <link rel="self" href="https://ricardogj08.github.io/blog/atom.xml" type="application/atom+xml"/>
 <link rel="alternate" href="https://ricardogj08.github.io/blog/"/>
 <generator uri="https://github.com/ricardogj08/ssgs" version="1.1">ssgs</generator>
+<entry>
+  <id>https://ricardogj08.github.io/blog/programacion/moonscript/01-instalacion.html</id>
+  <title>01 - Instalación de MoonScript</title>
+  <updated>2022-02-06T23:16:57Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/programacion/moonscript/01-instalacion.html"/>
+</entry>
 <entry>
   <id>https://ricardogj08.github.io/blog/contacto.html</id>
   <title>Contacto</title>

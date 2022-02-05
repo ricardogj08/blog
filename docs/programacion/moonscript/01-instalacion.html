@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markdown-retro@0.0.1/css/retro.css">
+<title>01 - Instalación de MoonScript</title>
+</head>
+<body>
+<header>
+<h1><a href="https://ricardogj08.github.io/blog/index.html">La bitácora de un Ñu</a></h1>
+<p>GNU/Linux, software libre, programación y servidores</p>
+<nav>
+<a href="https://ricardogj08.github.io/blog/index.html">Últimos artículos</a>
+<a href="https://ricardogj08.github.io/blog/all-posts.html">Artículos publicados</a>
+<a href="https://ricardogj08.github.io/blog/contacto.html">Contacto</a>
+<a href="https://ricardogj08.github.io/blog/atom.xml">Feed</a>
+</nav>
+</header>
+<main>
+<article>
+<h1>01 - Instalación de MoonScript</h1>
+<blockquote><p>Esta es la primera parte de una serie de artículos o apuntes para aprender MoonScript.</p>
+</blockquote>
+<p><a href="https://moonscript.org/"><strong>MoonScript</strong></a> es un lenguaje de scripting dinámico que se compila en <a href="https://www.lua.org/">Lua</a> (un lenguaje de programación de propósito general ligero y potente).</p>
+<p>Cuando hablamos de lenguajes de scripting, existe un programa llamado interprete que lee una instrucción, valida si la sintaxis es correcta y la ejecuta, o lee una secuencia de instrucciones y las ejecuta una por una.<br>
+MoonScript es dinámico, puede compilar toda una serie de instrucciones a Lua y después ejecutarse (<code>moonc</code>), o compilarse por instrucción y ejecutarse (<code>moon</code>).</p>
+<p>Puedes utilizar toda la potencia de Lua en MoonScript con una sintaxis aún más simple y comprensible, además de características adicionales del propio lenguaje. La sintaxis es similar a Python, utiliza la indentación para delimitar bloques de instrucciones, si programas en este lenguaje será bastante sencillo aprender MoonScript. Si eres programador JavaScript, MoonScript es el <a href="https://coffeescript.org/">CoffeeScript</a> para Lua.</p>
+<blockquote><p>Para aprender MoonScript es indispensable conocer la sintaxis básica de Lua.</p>
+</blockquote>
+<p>¿Y como instalo MoonScript?, para sistemas basados en Arch Linux solo debes ejecutar los siguientes comandos con privilegios de administrador:</p>
+<pre><code class="language-shell"># pacman -S gcc lua51 luarocks
+# luarocks --lua-version 5.1 install moonscript
+</code></pre>
+<p>Se proporcionaran los ejecutables:</p>
+<ul>
+<li><code>moon</code></li>
+<li><code>moonc</code></li>
+</ul>
+<p>Además del módulo <code>moonscript</code> para Lua, que permite utilizar directamente MoonScipt dentro de Lua o controlar algunos aspectos del proceso de compilación:</p>
+<ul>
+<li><code>require 'moonscript'</code></li>
+</ul>
+<h2>Referencias a utilizar</h2>
+<ul>
+<li><a href="https://moonscript.org/reference/">Manual de referencia de MoonScript.</a></li>
+<li><a href="https://moonscript.org/">Página oficial de MoonScript.</a></li>
+<li><a href="https://www.lua.org/home.html">Página oficial de Lua.</a></li>
+<li><a href="https://www.lua.org/manual/5.1/es/">Manual de referencia de Lua 5.1.</a></li>
+</ul>
+</article>
+</main>
+<footer>
+<p>Copyright &copy; 2021 - Ricardo García Jiménez<br>El contenido de este sitio web se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a></p>
+<p>Generated with <a href="https://github.com/ricardogj08/ssgs" target="_blank">ssgs</a>, a simple static blog generator written in POSIX sh</p>
+</footer>
+</body>
+</html>
