@@ -2,7 +2,7 @@
 
 > Esta es la primera parte de una serie de artículos o apuntes para aprender MoonScript.
 
-[**MoonScript**](https://moonscript.org/) es un lenguaje de scripting dinámico que se compila en [Lua](https://www.lua.org/) (un lenguaje de programación de propósito general ligero y potente).
+[**MoonScript**](https://moonscript.org/) es un lenguaje de scripting dinámico que se compila a [Lua](https://www.lua.org/) (un lenguaje de programación de propósito general ligero y potente).
 
 Cuando hablamos de lenguajes de scripting, existe un programa llamado interprete que lee una instrucción, valida si la sintaxis es correcta y la ejecuta, o lee una secuencia de instrucciones y las ejecuta una por una.<br>
 MoonScript es dinámico, puede compilar toda una serie de instrucciones a Lua y después ejecutarse (`moonc`), o compilarse por instrucción y ejecutarse (`moon`).

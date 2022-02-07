@@ -7,7 +7,7 @@ Un blog sobre GNU/Linux, software libre, programación y servidores
 ## Licencia
 
 ```text
-Copyright (C) 2021 - Ricardo García Jiménez <ricardogj08@riseup.net>
+Copyright (C) 2021-2022 - Ricardo García Jiménez <ricardogj08@riseup.net>
 
 Eres libre de utilizar, compartir, modificar y distribuir versiones
 modificadas del contenido de este sitio web bajo los términos de la
