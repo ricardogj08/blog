@@ -2,13 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
 <id>https://ricardogj08.github.io/blog/atom.xml</id>
 <title>La bitácora de un Ñu</title>
-<updated>2022-02-07T14:42:34Z</updated>
+<updated>2022-02-08T01:27:43Z</updated>
 <author>
   <name>La bitácora de un Ñu</name>
 </author>
 <link rel="self" href="https://ricardogj08.github.io/blog/atom.xml" type="application/atom+xml"/>
 <link rel="alternate" href="https://ricardogj08.github.io/blog/"/>
 <generator uri="https://github.com/ricardogj08/ssgs" version="1.1">ssgs</generator>
+<entry>
+  <id>https://ricardogj08.github.io/blog/personal/rutina.html</id>
+  <title>Rutina del gym</title>
+  <updated>2022-02-08T01:27:39Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/rutina.html"/>
+</entry>
+<entry>
+  <id>https://ricardogj08.github.io/blog/personal/acerca-de-mi.html</id>
+  <title>Acerca de mí</title>
+  <updated>2022-02-07T18:27:44Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/acerca-de-mi.html"/>
+</entry>
+<entry>
+  <id>https://ricardogj08.github.io/blog/personal/metas.html</id>
+  <title>Metas</title>
+  <updated>2022-02-07T18:20:53Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/metas.html"/>
+</entry>
+<entry>
+  <id>https://ricardogj08.github.io/blog/personal/animes.html</id>
+  <title>Animes favoritos</title>
+  <updated>2022-02-07T18:18:46Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/animes.html"/>
+</entry>
 <entry>
   <id>https://ricardogj08.github.io/blog/programacion/moonscript/01-instalacion.html</id>
   <title>01 - Instalación de MoonScript</title>
@@ -19,12 +55,12 @@
   <link rel="alternate" href="https://ricardogj08.github.io/blog/programacion/moonscript/01-instalacion.html"/>
 </entry>
 <entry>
-  <id>https://ricardogj08.github.io/blog/contacto.html</id>
+  <id>https://ricardogj08.github.io/blog/personal/contacto.html</id>
   <title>Contacto</title>
   <updated>2022-02-04T16:22:55Z</updated>
   <author>
     <name>La bitácora de un Ñu</name>
   </author>
-  <link rel="alternate" href="https://ricardogj08.github.io/blog/contacto.html"/>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/contacto.html"/>
 </entry>
 </feed>
