@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
 <id>https://ricardogj08.github.io/blog/atom.xml</id>
 <title>La bitácora de un Ñu</title>
-<updated>2022-02-08T02:53:23Z</updated>
+<updated>2022-02-13T02:04:12Z</updated>
 <author>
   <name>La bitácora de un Ñu</name>
 </author>
@@ -12,11 +12,29 @@
 <entry>
   <id>https://ricardogj08.github.io/blog/personal/metas.html</id>
   <title>Metas</title>
-  <updated>2022-02-08T02:52:31Z</updated>
+  <updated>2022-02-13T02:03:59Z</updated>
   <author>
     <name>La bitácora de un Ñu</name>
   </author>
   <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/metas.html"/>
+</entry>
+<entry>
+  <id>https://ricardogj08.github.io/blog/personal/rutina.html</id>
+  <title>Rutina del gym</title>
+  <updated>2022-02-13T01:57:41Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/rutina.html"/>
+</entry>
+<entry>
+  <id>https://ricardogj08.github.io/blog/personal/contacto.html</id>
+  <title>Contacto</title>
+  <updated>2022-02-13T01:24:15Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/contacto.html"/>
 </entry>
 <entry>
   <id>https://ricardogj08.github.io/blog/personal/animes.html</id>
@@ -26,15 +44,6 @@
     <name>La bitácora de un Ñu</name>
   </author>
   <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/animes.html"/>
-</entry>
-<entry>
-  <id>https://ricardogj08.github.io/blog/personal/rutina.html</id>
-  <title>Rutina del gym</title>
-  <updated>2022-02-08T01:27:39Z</updated>
-  <author>
-    <name>La bitácora de un Ñu</name>
-  </author>
-  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/rutina.html"/>
 </entry>
 <entry>
   <id>https://ricardogj08.github.io/blog/personal/acerca-de-mi.html</id>
@@ -53,14 +62,5 @@
     <name>La bitácora de un Ñu</name>
   </author>
   <link rel="alternate" href="https://ricardogj08.github.io/blog/programacion/moonscript/01-instalacion.html"/>
-</entry>
-<entry>
-  <id>https://ricardogj08.github.io/blog/personal/contacto.html</id>
-  <title>Contacto</title>
-  <updated>2022-02-04T16:22:55Z</updated>
-  <author>
-    <name>La bitácora de un Ñu</name>
-  </author>
-  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/contacto.html"/>
 </entry>
 </feed>

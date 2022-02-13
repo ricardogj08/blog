@@ -8,7 +8,7 @@
 
 ## Principiantes
 
-> 2 ejercicios por músculo, 5 días por semana de 2 horas en 1 mes.
+> 2 ejercicios por músculo, 5 días a la semana de 2 horas en 1 mes.
 
 ### Semana 1
 
