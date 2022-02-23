@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
 <id>https://ricardogj08.github.io/blog/atom.xml</id>
 <title>La bitácora de un Ñu</title>
-<updated>2022-02-15T17:26:37Z</updated>
+<updated>2022-02-23T12:14:50Z</updated>
 <author>
   <name>La bitácora de un Ñu</name>
 </author>
@@ -10,22 +10,22 @@
 <link rel="alternate" href="https://ricardogj08.github.io/blog/"/>
 <generator uri="https://github.com/ricardogj08/ssgs" version="1.1">ssgs</generator>
 <entry>
-  <id>https://ricardogj08.github.io/blog/personal/rutina.html</id>
-  <title>Rutina del gym</title>
-  <updated>2022-02-15T17:22:43Z</updated>
-  <author>
-    <name>La bitácora de un Ñu</name>
-  </author>
-  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/rutina.html"/>
-</entry>
-<entry>
   <id>https://ricardogj08.github.io/blog/personal/metas.html</id>
   <title>Metas</title>
-  <updated>2022-02-13T02:03:59Z</updated>
+  <updated>2022-02-23T12:13:59Z</updated>
   <author>
     <name>La bitácora de un Ñu</name>
   </author>
   <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/metas.html"/>
+</entry>
+<entry>
+  <id>https://ricardogj08.github.io/blog/personal/rutina.html</id>
+  <title>Rutina del gym</title>
+  <updated>2022-02-23T12:03:12Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/rutina.html"/>
 </entry>
 <entry>
   <id>https://ricardogj08.github.io/blog/personal/contacto.html</id>

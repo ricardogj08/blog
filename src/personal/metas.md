@@ -4,24 +4,24 @@
 
 ### Corto plazo
 
+* \[\*\] - Programar únicamente en el día.
 * [ ] - Comprar una silla gamer para mi sedentarismo.
-* [ ] - Programar unicamente en el día.
 
 ### Medio plazo
 
 * [ ] - Ir al gym 5 días a la semana.
 * [ ] - Tomar refresco una vez a la semana.
-* [ ] - Dormir a las 2 a.m.
-* [ ] - Despertar a las 10 a.m.
-* [ ] - Construir una relación sana y duradera con mi novia.
+* [ ] - Dormir a las 2 a.m. o más temprano.
+* [ ] - Despertar a las 10 a.m. o más temprano.
 * [ ] - Obtener mi título profesional.
+* [ ] - Construir una relación sana y duradera con mi novia.
 
 ### Largo plazo
 
 * [ ] - Pesar 100 kg.
 * [ ] - Disfrutar de mi trabajo como desarrollador web.
-* [ ] - Tener una casa.
 * [ ] - Tener un automóvil.
+* [ ] - Tener una casa.
 * [ ] - Vivir con mi pareja.
 * [ ] - Casarme.
 
@@ -38,16 +38,16 @@
 
 #### Marzo
 
-* [ ] - Aprender Lapis para MoonScript.
-* [ ] - Desarrollar una API para recortar URLs con Lapis.
+* [ ] - Aprender CSS.
+* [ ] - Aprender Bootstrap.
 * [ ] - Reescribir *page* para gestionar mis contraseñas.
-* [ ] - Iniciar mis estudios de inglés.
 
 #### Abril
 
-* [ ] - Aprender CSS.
-* [ ] - Aprender Bootstrap.
 * [ ] - Aprender un framework de desarrollo web con PHP.
+* [ ] - Aprender Lapis para MoonScript.
+* [ ] - Desarrollar una API para recortar URLs con Lapis.
+* [ ] - Iniciar mis estudios de inglés.
 
 #### Mayo
 
