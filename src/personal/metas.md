@@ -31,13 +31,15 @@
 
 #### Febrero
 
-* [ ] - Terminar Nabu.
+* [ ] - Terminar la lógica de negocio principal de Nabu.
 * [ ] - Encontrar una vacante con salario para realizar mis prácticas profesionales.
-* [ ] - Aprender MoonScript.
+* \[\*\] - Leer el manual de referencia de MoonScript.
 * \[\*\] - Reescribir PlanetaLibre versión Gemini a MoonScript.
 
 #### Marzo
 
+* [ ] - Formatear y configurar mi servidor personal con Arch Linux.
+* [ ] - Instalar un programa de alojamiento de archivos en mi servidor.
 * [ ] - Aprender CSS.
 * [ ] - Aprender Bootstrap.
 * [ ] - Reescribir *page* para gestionar mis contraseñas.

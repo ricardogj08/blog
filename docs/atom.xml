@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
 <id>https://ricardogj08.github.io/blog/atom.xml</id>
 <title>La bitácora de un Ñu</title>
-<updated>2022-02-26T12:15:52Z</updated>
+<updated>2022-02-27T15:34:30Z</updated>
 <author>
   <name>La bitácora de un Ñu</name>
 </author>
@@ -10,9 +10,18 @@
 <link rel="alternate" href="https://ricardogj08.github.io/blog/"/>
 <generator uri="https://github.com/ricardogj08/ssgs" version="1.1">ssgs</generator>
 <entry>
+  <id>https://ricardogj08.github.io/blog/personal/acerca-de-mi.html</id>
+  <title>Acerca de mí</title>
+  <updated>2022-02-27T15:34:12Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/acerca-de-mi.html"/>
+</entry>
+<entry>
   <id>https://ricardogj08.github.io/blog/personal/metas.html</id>
   <title>Metas</title>
-  <updated>2022-02-26T12:09:57Z</updated>
+  <updated>2022-02-27T15:27:52Z</updated>
   <author>
     <name>La bitácora de un Ñu</name>
   </author>
@@ -44,15 +53,6 @@
     <name>La bitácora de un Ñu</name>
   </author>
   <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/animes.html"/>
-</entry>
-<entry>
-  <id>https://ricardogj08.github.io/blog/personal/acerca-de-mi.html</id>
-  <title>Acerca de mí</title>
-  <updated>2022-02-07T18:27:44Z</updated>
-  <author>
-    <name>La bitácora de un Ñu</name>
-  </author>
-  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/acerca-de-mi.html"/>
 </entry>
 <entry>
   <id>https://ricardogj08.github.io/blog/programacion/moonscript/01-instalacion.html</id>
