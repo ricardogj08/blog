@@ -68,22 +68,22 @@ Link de la rutina:
 
 * <https://youtu.be/7LISeYlGats>
 
-## Lunes
+## Lunes - Pecho/Bíceps
 
 ...
 
-## Martes
+## Martes - Cuadríceps/Pantorrilla
 
 ...
 
-## Miércoles
+## Miércoles - Espalda/Tríceps
 
 ...
 
-## Jueves
+## Jueves - Femoral/Pantorrilla
 
 ...
 
-## Viernes
+## Viernes - Hombro/Trapecio
 
 ...

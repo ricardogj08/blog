@@ -5,6 +5,9 @@
 ### Corto plazo
 
 * \[\*\] - Programar únicamente en el día.
+* [ ] - Formatear mi laptop gto con Arch Linux.
+* [ ] - Formatear y configurar mi servidor personal con Arch Linux.
+* [ ] - Desarrollar o instalar un programa de alojamiento de archivos en mi servidor.
 * [ ] - Comprar una silla gamer para mi sedentarismo.
 
 ### Medio plazo
@@ -32,14 +35,12 @@
 #### Febrero
 
 * [ ] - Terminar la lógica de negocio principal de Nabu.
-* [ ] - Encontrar una vacante con salario para realizar mis prácticas profesionales.
+* \[\*\] - Postular en una vacante para mis prácticas profesionales.
 * \[\*\] - Leer el manual de referencia de MoonScript.
 * \[\*\] - Reescribir PlanetaLibre versión Gemini a MoonScript.
 
 #### Marzo
 
-* [ ] - Formatear y configurar mi servidor personal con Arch Linux.
-* [ ] - Instalar un programa de alojamiento de archivos en mi servidor.
 * [ ] - Aprender CSS.
 * [ ] - Aprender Bootstrap.
 * [ ] - Reescribir *page* para gestionar mis contraseñas.
