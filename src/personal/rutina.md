@@ -68,22 +68,121 @@ Link de la rutina:
 
 * <https://youtu.be/7LISeYlGats>
 
-## Lunes - Pecho/Bíceps
+## Lunes - Femoral/Pantorrilla
+
+* 30 x 2 repeticiones de calentamiento extensión de cuádriceps con las puntas de los pies rectos.
+
+Circuito 1 (x4):
+
+* (2 x 20) y (2 x 15) - Sentadilla sumo.
+* 15 repeticiones - Femoral acostado.
+
+Circuito 2 (x4):
+
+* (2 x 20) y (2 x 15) - Prensa con los pies hasta arriba abiertas con las puntas hacía afuera, flexionadas.
+* 15 repeticiones - Peso muerto con mancuernas, balanceando y piernas rectas.
+
+Circuito 3 (x4):
+
+* (2 x 20) y (2 x 15) - Sentadilla perfecta pies abiertos con las puntas hacía afuera, flexionadas.
+* 15 repeticiones - Femoral de pie individual.
+
+Circuito 4 (x4):
+
+* 25 repeticiones - Pantorrillas en prensa con las puntas de los pies rectos, flexionadas.
+* 15 repeticiones - Pantorrilla individual con mancuernas de pie con las puntas rectas.
+
+Circuito 5 (x4):
+
+* 10 repeticiones - Pantorrillas costurera con las puntas de los pies rectos.
+* 10 repeticiones - Pantorrillas costurera con las puntas de los pies hacía adentro.
+
+Link de la rutina:
+
+* <https://youtu.be/BmnidNSq_lY>
+
+## Martes - Hombro/Trapecio
+
+* 30 x 2 repeticiones de calentamiento laterales con mancuernas de pie para hombro.
+
+Circuito 1 (x5):
+
+* 10 repeticiones - Press militar con mancuernas sentado para hombros.
+* 6 repeticiones (6 segundos) - Laterales con mancuernas de pie para hombros subiendo lento.
+* 10 repeticiones - Press militar con mancuernas sentado para hombros. 
+* 6 repeticiones (6 segundos) - Laterales con mancuernas de pie para hombros bajando lento.
+* 10 repeticiones - Press militar con mancuernas sentado para hombros.
+* 20 segundos - Laterales con mancuernas de pie para hombros isométrico.
+
+Circuito 2 (x5):
+
+* 10 repeticiones - Barra al frente sentado para hombros.
+* 6 repeticiones (6 segundos) - Frontales con mancuernas para hombros subiendo lento.
+* 6 repeticiones (6 segundos) - Frontales con mancuernas para hombros bajando lento.
+* 10 repeticiones - Barra al frente sentado para hombros.
+* 6 repeticiones (6 segundos) - Vuelos posteriores con mancuernas para hombros subiendo lento.
+* 6 repeticiones (6 segundos) - Vuelos posteriores con mancuernas para hombros bajando lento.
+
+## Miércoles - Pecho/Bíceps
+
+* 30 x 2 repeticiones de calentamiento barra inclinada sin peso para pecho.
+* 12 x 4 - Barra inclinada para pecho.
+* 12 x 4 - Barra plana para pecho.
+* 12 x 4 - Barra declinada para pecho.
+
+Circuito (x4):
+
+* 12 repeticiones - Banca plana con mancuernas para pecho.
+* 12 repeticiones - Cristos banca plana para pecho.
+
+Bíceps:
+
+* 12 x 4 - Bíceps sentado con mancuernas individual girando.
+* 12 x 4 - Predicador con mancuernas individual.
+* 12 x 4 - Bíceps de pie con barra *Z* agarre abierto.
+
+Link de la rutina:
+
+* <https://youtu.be/CBdddi33Qio>
+
+## Jueves - Cuádriceps/Pantorrilla
+
+* 30 x 2 repeticiones de calentamiento extensión de cuádriceps con las puntas de los pies rectos.
+
+Circuito 1 (x5):
+
+* 10 repeticiones - Sentadillas con barra normales.
+* 6 repeticiones (6 segundos) - Sentadillas con barra subiendo lento.
+* 6 repeticiones (6 segundos) - Sentadillas con barra bajando lento.
+* 20 segundos - Sentadillas con barra en isometría.
+
+Circuito 2 (x5):
+
+* 10 repeticiones - Prensa 45º pies al centro y puntas un poco abiertas, flexionadas, normales.
+* 6 repeticiones (6 segundos) - Prensa 45º pies al centro y puntas un poco abiertas, flexionadas, subiendo lento.
+* 6 repeticiones (6 segundos) - Prensa 45º pies al centro y puntas un poco abiertas, flexionadas, bajando lento.
+* 20 segundos - Prensa 45º pies al centro y puntas un poco abiertas, flexionadas, en isometría.
+
+Circuito 3 (x3 continuo):
+
+* 10 repeticiones - Extensión de cuádriceps con las puntas de los pies rectos.
+* 10 segundos - Sentadilla libre en isometría.
+
+Circuito 4 (x4):
+
+* 25 repeticiones - Pantorrillas en prensa con las puntas de los pies rectos, flexionadas.
+* 15 repeticiones - Pantorrilla individual con mancuernas de pie con las puntas rectas.
+
+Circuito 5 (x4):
+
+* 10 repeticiones - Pantorrillas costurera con las puntas de los pies rectos.
+* 10 repeticiones - Pantorrillas costurera con las puntas de los pies hacía adentro.
+
+Link de la rutina:
+
+* <https://youtu.be/-s7syjgAPY0>
+
+## Viernes - Espalda/Tríceps
 
 ...
 
-## Martes - Cuadríceps/Pantorrilla
-
-...
-
-## Miércoles - Espalda/Tríceps
-
-...
-
-## Jueves - Femoral/Pantorrilla
-
-...
-
-## Viernes - Hombro/Trapecio
-
-...

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://ricardogj08.github.io/blog/markdown.css">
+<title>Introducción a la arquitectura de microservicios</title>
+</head>
+<body>
+<header>
+<h1><a href="https://ricardogj08.github.io/blog/index.html">La bitácora de un Ñu</a></h1>
+<p>GNU/Linux, software libre, programación y servidores</p>
+<nav>
+<a href="https://ricardogj08.github.io/blog/index.html">Últimos artículos</a>
+<a href="https://ricardogj08.github.io/blog/all-posts.html">Artículos publicados</a>
+<a href="https://ricardogj08.github.io/blog/personal/acerca-de-mi.html">Acerca de mí</a>
+<a href="https://ricardogj08.github.io/blog/personal/contacto.html">Contacto</a>
+<a href="https://ricardogj08.github.io/blog/atom.xml">Feed</a>
+</nav>
+</header>
+<main>
+<article>
+<h1>Introducción a la arquitectura de microservicios</h1>
+<h2>Aplicaciones monolíticas</h2>
+<p>Características:</p>
+<ul>
+<li>Los componentes y módulos están conectados en un mismo programa, todos los componentes son importantes para que la aplicación funcione.</li>
+<li>Es una aplicación autónoma que no depende de componentes externos, todas las funcionalidades se encuentran dentro de la aplicación. </li>
+<li>Normalmente el backend y el frontend están en la misma solución, lo más tradicional es utilizar un framework fullstack como Laravel.</li>
+<li>Se suele implementar separación de capas, módulos o bibliotecas dependientes dentro de la aplicación.</li>
+<li>Es la arquitectura más tradicional para diseñar aplicaciones.</li>
+</ul>
+<h3>Monolitos</h3>
+<p>Los <strong><em>monolitos</em></strong> son aplicaciones desarrolladas bajo una arquitectura monolítica.</p>
+<p>Acerca de:</p>
+<ul>
+<li>No es un antipatrón (es una arquitectura válida).</li>
+<li>Es una buena arquitectura para soluciones rápidas y pequeñas.</li>
+<li>Es perfecta para pruebas de concepto (para ciertos escenarios).</li>
+<li>Permiten construir aplicaciones rápidamente.</li>
+<li>Funciona para el 99% de las aplicaciones pequeñas.</li>
+<li>Los frameworks fullsctack permiten desarrollar aplicaciones monolíticas.</li>
+</ul>
+<p>Ejemplo de una aplicación monolítica:</p>
+<p><img src="img/ejemplo-monolito.png" alt="Ejemplo de una aplicación monolítica" /></p>
+<blockquote><p>Una arquitectura monolitica es un buen punto para empezar una solución, posteriormente se pueden integrar microservicios, diferentes arquitecturas y patrones según las necesidades.</p>
+</blockquote>
+<h3>Desafíos</h3>
+<ul>
+<li>Son difíciles de escalar.</li>
+</ul>
+<blockquote><p>El <strong><em>Scale-Up</em></strong> se refiere a aumentar los recursos del servidor donde está alojada la aplicación.</p>
+<p>El <strong><em>Scale-Out</em></strong> se refiere a utilizar diferentes ordenadores para distribuir la demanada de la aplicación.</p>
+</blockquote>
+<ul>
+<li>Los componentes del sistema son totalmente dependientes.</li>
+<li>Tienen poca tolerancia ante fallos.</li>
+<li>Alta dependencia entre los equipos de desarrollo, se necesita una muy buena coordinación sobre el trabajo que se está realizando en la aplicación.</li>
+<li>Son difíciles de mantener ante un crecimiento exponencial.</li>
+<li>La curva de aprendizaje es mayor para comprender la aplicación orientada a nuevos desarrolladores.</li>
+</ul>
+<h2>Arquitectura de software y SOA</h2>
+<p>Una <strong><em>arquitectura de software</em></strong> se refiere a la relación, comunicación y estructura de los componentes en un sistema, incluye buenas prácticas y patrones comprobadas en diferentes escenarios, además nos ayudan a modelar una solución de acuerdo a nuestras necesidades.</p>
+<p>Los servicios son aplicaciones expuestas que proveen datos o rutinas específicas para ser consumidas por otras aplicaciones, nos permiten distribuir la lógica y compartirla entre diferentes clientes.</p>
+<p>Estándares para servicios:</p>
+<ul>
+<li>SOAP Web services</li>
+<li>API RESTful</li>
+<li>GraphQL</li>
+</ul>
+<p><strong><em>SOA</em></strong> (Service Oriented Architecture) es una arquitectura donde se distribuye la lógica en servicios que luego son consumidos a través de interfaces. Los servicios normalmente están relacionados en unidades de negocios o áreas de una compañía y por su complejidad se necesita de un software orquestador (integra servicios de diversas fuentes) o administrador de servicios.</p>
+<p>Ejemplo de una aplicación SOA:</p>
+<p><img src="img/ejemplo-soa.png" alt="Ejemplo de una arquitectura SOA" /></p>
+<blockquote><p>Un administrador de servicios es costoso.</p>
+</blockquote>
+<p><strong><em>Microservicios es una interpretación moderna de SOA.</em></strong></p>
+<h2>Microservicios</h2>
+<p>Es una arquitectura orientada a servicios y a la nube que busca descomponer una aplicación en diferentes servicios para obtener alta disponibilidad, bajo acoplamiento (dependencia), descentralización y tolerancia a fallos.</p>
+<p>Es una arquitectura ideal para escenarios de alto tráfico (volumen de datos), alta demanda (número de peticiones) y alta disponibilidad.</p>
+<p>Cada microservicio pude estar construido en un lenguaje y tecnología diferente.</p>
+<p>Ejemplo de una aplicación con microservicios:</p>
+<p><img src="img/ejemplo-microservicios.png" alt="Ejemplo de microservicios" /></p>
+<blockquote><p>La aplicación se divide por servicios o responsabilidades, y cada servicio cuenta con su propia base de datos.</p>
+</blockquote>
+<p>Los microservicios resuelven los problemas a gran escala que presentan las aplicaciones monolíticas y dividen problemas complejos de gran magnitud en problemas pequeños.</p>
+<h2>Reglas de diseño de un Microservicio</h2>
+<ul>
+<li>Un microservicio debe estar aislado y debe ser autónomo (independientes).</li>
+<li>Cada microservicio debe tener su propio repositorio.</li>
+<li>Cada microservicio debe tener su propia base de datos.</li>
+<li>Cada microservicio debe ser desplegado de manera independiente (diferentes servidores).</li>
+<li>Cada microservicio debe tener una única responsabilidad.</li>
+<li>Un microservicio debe ser en lo posible <em>Stateless</em> (no guardar datos en caché, sesión, etc.).</li>
+<li>Los microservicios deben manejar tipos de datos estándar (formatos estándar).</li>
+<li>Deben ser ligeros y deben tener una arquitectura simple.</li>
+<li>Deben ser monitoreables.</li>
+<li>Cada microservicio se puede versionar.</li>
+</ul>
+<h2>Ventajas de los Microservicios</h2>
+<ul>
+<li>Alta disponibilidad en nuestras aplicaciones y pueden funcionar parcialmente (por módulos específicos).</li>
+<li>Cada servicio puede estar construido de manera diferente de acuerdo a las necesidades.</li>
+<li>Permite tener equipos distribuidos e independientes.</li>
+<li>Fácil de escalar.</li>
+<li>Desarrollo modular y progresivo.</li>
+<li>Alta tolerancia a fallos.</li>
+<li>Detección y corrección rápida de errores en muchos escenarios.</li>
+</ul>
+<h2>Desafíos de los Microservicios</h2>
+<ul>
+<li>Los esfuerzos para desplegar se multiplican por el número de servicios.</li>
+<li>La integración de servicios al desplegar la aplicación completa.</li>
+<li>Integridad de los datos al tener múltiples bases de datos con valores compartidos.</li>
+<li>Requiere profesionales, equipos y empresas de gran madurez.</li>
+<li>Requiere de una cultura DevOps madura y con buenas herramientas.</li>
+<li>Alta complejidad al manejar gran número de microservicios.</li>
+<li>Alta inversión de tiempo, gestión, mantenimiento y arquitectura.</li>
+</ul>
+<h2>Microservicios y DevOps</h2>
+<ul>
+<li><strong><em>DevOps</em></strong> resuelve la complejidad de los despliegues en arquitecturas basadas en Microservicios.</li>
+<li>Microservicios es una arquitectura orientada a la nube.</li>
+<li>Automatización de procesos y reducción de tiempos son fundamentales.</li>
+</ul>
+<p>Algunas herramientas que ayudan a desplegar microservicios:</p>
+<ul>
+<li><a href="https://www.docker.com/">Docker</a></li>
+<li><a href="https://kubernetes.io/es/">Kubernetes</a></li>
+<li><a href="https://www.terraform.io/">Terraform</a></li>
+<li><a href="https://aws.amazon.com/es/cloudformation/">AWS CloudFormation</a></li>
+</ul>
+<h2>Opciones y estrategias de despliegue</h2>
+<p>Máquinas Virtuales:</p>
+<ul>
+<li>Se utiliza una máquina virtual para desplegar cada microservicio con su propio servidor de manera aislada.</li>
+<li>Es muy complejo y difícil de mantener.</li>
+<li>Es la opción más costosa.</li>
+<li>Es una opción común en tecnologías legacy (antiguas).</li>
+</ul>
+<p>Servicios para APIs:</p>
+<ul>
+<li>Son servicios especializados en desplegar APIs de diferentes tecnologías.</li>
+<li>Se deben construir APIs RESTful tradicionales.</li>
+<li><a href="https://azure.microsoft.com/es-mx/services/app-service/">Azure App Service</a> es uno de los más populares.</li>
+<li>Estrategia Blue/Green (producción/nuevas versiones).</li>
+</ul>
+<p>Serverless:</p>
+<ul>
+<li>Ejecuta piezas de código sin preocuparse por el servidor y su configuración.</li>
+<li>Disminuye la complejidad de implementaciones pequeñas.</li>
+<li>Algunos ejemplos de estos servicios: <a href="https://azure.microsoft.com/es-mx/services/functions/">Azure Functions</a>, <a href="https://aws.amazon.com/es/lambda/">AWS Lambda</a>, <a href="https://www.alibabacloud.com/es/product/function-compute">Alibaba Cloud Function Compute</a>.</li>
+</ul>
+<p>Contenedores:</p>
+<ul>
+<li>Permite desplegar una aplicación de manera aislada.</li>
+<li><a href="https://www.docker.com/">Docker</a> es el más famoso.</li>
+<li>Existen orquestadores para escenarios avanzados y complejos.</li>
+<li>Es el preferido porque se tiene un alto control y bajo acoplamiento.</li>
+<li>Fácil de migrar a otros proveedores cloud.</li>
+</ul>
+<blockquote><p>Podemos combinar diferentes estrategias para crear y desplegar Microservicios de acuerdo a nuestras necesidades.</p>
+</blockquote>
+<h2>Estrategias de diseño en Microservicios</h2>
+<h3>Arquitectura Hexagonal</h3>
+<ul>
+<li>Es una arquitectura orientada a servicios desacoplados basada en puertos y adaptadores para comunicar los diferentes microservicios.</li>
+<li>Permite separar las capas a través de adaptadores con su propia responsabilidad, evitando el acoplamiento de los componentes de la aplicación.</li>
+<li>Permite que la aplicación se use de la misma manera por cualquier usuario, programa o tarea.</li>
+</ul>
+<p>Ejemplo de un arquitectura hexagonal:</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Hexagonal_Architecture.svg" alt="Ejemplo de un arquitectura hexagonal" /></p>
+<h3>MicroApps</h3>
+<ul>
+<li>Se diseñan aplicaciones con responsabilidades específicas y servicios aislados.</li>
+<li>Se comparten componentes entre las apps manteniendo su independencia.</li>
+<li>Se debe tener una integración entre los datos generados por las diferentes apps.</li>
+</ul>
+<p>Ejemplo de MicroApps:</p>
+<p><img src="https://buymyspace.org/wp-content/uploads/2020/12/google-apps-.jpg" alt="Ejemplo de MicroApps" /></p>
+<h3>Separación de roles</h3>
+<ul>
+<li>Se definen microservicios por cada rol que se presente en la aplicación.</li>
+<li>Se refuerza la seguridad de acuerdo al rol y a cada microservicio.</li>
+<li>Se debe tener una integración de los datos generados por los diferente microservicios.</li>
+</ul>
+<h3>Microservicios por núcleo de negocio</h3>
+<ul>
+<li>Se identifican las diferentes unidades de negocio de la aplicación (financiera, administrativa, reclutamiento, etc).</li>
+<li>Se dividen las unidades de negocio en servicios.</li>
+<li>Se debe tener una integración entre los datos generados por los diferentes núcleos de negocio.</li>
+</ul>
+<p>Ejemplo de microservicios por núcleo de negocio:</p>
+<p><img src="img/ejemplo-nucleo-negocio.png" alt="Ejemplo de microservicios por núcleo de negocio" /></p>
+<h3>Microservicios por flujos de trabajo</h3>
+<ul>
+<li>Se identifican los pasos que realizan los usuarios y después se dividen por fases y etapas.</li>
+<li>Se construyen microservicios por cada flujo existente dentro de la aplicación.</li>
+<li>Se actualizan y mueven los datos para construir cada fase hasta finalizarlo.</li>
+</ul>
+<p>Ejemplo de microservicios por flujos de trabajo:</p>
+<p><img src="img/ejemplo-flujos-trabajo.png" alt="Ejemplo de microservicios por flujos de trabajo" /></p>
+<h2>Patrones en Microservicios</h2>
+<blockquote><p>Los patrones son una guía para solucionar problemas o retos conocidos.</p>
+</blockquote>
+<h3>Ambassador - Embajador</h3>
+<ul>
+<li>Es uno de los patrones más utilizados en microservicios junto a la arquitectura hexagonal.</li>
+<li>Permite crear una capa de abstracción entre el servicio y los componentes compartidos.</li>
+<li>Permite consumir servicios de monitoreo, autenticación, seguridad, utilidades, etc.</li>
+<li>Este patrón se debe implementar en el mismo host en el que se encuentra el servicio.</li>
+</ul>
+<p>Ejemplo de un patrón embajador:</p>
+<p><img src="https://docs.microsoft.com/es-es/azure/architecture/patterns/_images/ambassador.png" alt="Ejemplo de un patrón embajador" /></p>
+<h3>Materialized View - Vista Materializada</h3>
+<ul>
+<li>Se crea una tabla en caché que se utiliza cada cierto tiempo donde los datos provenientes de las tablas originales se consolidan para que sea más fácil su lectura.</li>
+<li>Agiliza las consultas y mejora el performance.</li>
+</ul>
+<p><img src="https://docs.microsoft.com/es-es/azure/architecture/patterns/_images/materialized-view-pattern-diagram.png" alt="Ejemplo de un patrón por vista materializada" /></p>
+<h3>Event sourcing</h3>
+<ul>
+<li>Manipula las diferentes acciones de la aplicación como eventos.</li>
+<li>Gestiona los cambios que se presentan en la aplicación utilizando eventos.</li>
+<li>Las operaciones normales de un CRUD se convierten en eventos.</li>
+<li>Se utiliza un bus de eventos para llevar el control y el historial, como <a href="https://www.rabbitmq.com/">RabbitMQ</a> o <a href="https://kafka.apache.org/">Apache Kafka</a>.</li>
+</ul>
+<p>Ejemplo de un patrón por eventos:</p>
+<p><img src="https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/event-sourcing-overview.png" alt="Ejemplo de un patrón por eventos" /></p>
+<h3>Otros patrones</h3>
+<ul>
+<li>Retry</li>
+<li>Sidecar</li>
+<li>Priority Queue</li>
+<li>Anti-Corruption Layer</li>
+<li>Saga</li>
+<li>API Gateway</li>
+</ul>
+<h2>Patrón API Gateway</h2>
+<ul>
+<li>Permite extraer toda la capa de servicios a través de una única puerta de acceso, es decir, una URL única para exponer todos los microservicios.</li>
+<li>Permite exponer los endpoints de manera independiente aumentando su seguridad.</li>
+<li>Permite cambiar y reorganizar los servicios sin afectar las aplicaciones cliente.</li>
+</ul>
+<p>Ejemplo de un patrón por API Gateway:</p>
+<p><img src="img/ejemplo-api-gateway.png" alt="Ejemplo de un patrón por API Gateway" /></p>
+<h2>Patrón Saga</h2>
+<ul>
+<li>Permite administrar transacciones (secuencia de acciones).</li>
+<li>Cada transacción actualiza la base de datos o publica un evento para que continúe el siguiente.</li>
+<li>Se manejan transacciones de compensación para realizar acciones opuestas para realiza un rollback (devolver lo que se hizo).</li>
+</ul>
+<p>Ejemplo de un patrón por Saga:</p>
+<p><img src="https://docs.microsoft.com/es-ES/azure/architecture/reference-architectures/saga/images/saga-overview.png" alt="Ejemplo de un patrón por Saga" /></p>
+<h2>Referencias</h2>
+<ul>
+<li><a href="https://microservices.io/">https://microservices.io/</a></li>
+<li><a href="http://orquestador.cl/">Definición de un orquestador de servicios.</a></li>
+<li>Data webhouse - Consolida los datos de múltiples bases de datos en una sola.</li>
+<li><a href="https://docs.microsoft.com/es-es/azure/architecture/patterns/">Patrones de diseño en la nube.</a></li>
+</ul>
+</article>
+</main>
+<footer>
+<p>Copyright &copy; 2021-2022 - Ricardo García Jiménez<br>El contenido de este sitio web se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a></p>
+<p>Generated with <a href="https://github.com/ricardogj08/ssgs" target="_blank">ssgs</a>, a simple static blog generator written in POSIX sh</p>
+</footer>
+</body>
+</html>
