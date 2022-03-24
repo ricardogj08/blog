@@ -67,7 +67,7 @@ Ejemplo de una aplicación SOA:
 
 ## Microservicios
 
-Es una arquitectura orientada a servicios y a la nube que busca descomponer una aplicación en diferentes servicios para obtener alta disponibilidad, bajo acoplamiento (dependencia), descentralización y tolerancia a fallos.
+*Es una arquitectura orientada a servicios y a la nube que busca descomponer una aplicación en diferentes servicios para obtener alta disponibilidad, bajo acoplamiento (dependencia), descentralización y tolerancia a fallos.*
 
 Es una arquitectura ideal para escenarios de alto tráfico (volumen de datos), alta demanda (número de peticiones) y alta disponibilidad.
 

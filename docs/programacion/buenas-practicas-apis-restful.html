@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://ricardogj08.github.io/blog/markdown.css">
+<title>Creando APIs RESTful con buenas prácticas</title>
+</head>
+<body>
+<header>
+<h1><a href="https://ricardogj08.github.io/blog/index.html">La bitácora de un Ñu</a></h1>
+<p>GNU/Linux, software libre, programación y servidores</p>
+<nav>
+<a href="https://ricardogj08.github.io/blog/index.html">Últimos artículos</a>
+<a href="https://ricardogj08.github.io/blog/all-posts.html">Artículos publicados</a>
+<a href="https://ricardogj08.github.io/blog/personal/acerca-de-mi.html">Acerca de mí</a>
+<a href="https://ricardogj08.github.io/blog/personal/contacto.html">Contacto</a>
+<a href="https://ricardogj08.github.io/blog/atom.xml">Feed</a>
+</nav>
+</header>
+<main>
+<article>
+<h1>Creando APIs RESTful con buenas prácticas</h1>
+<h2>Protocolo HTTP</h2>
+<p>El <strong><em>protocolo HTTP</em></strong> es una norma que describe como realizar una comunicación entre dos dispositivos para enviar y recibir información.</p>
+<blockquote><p>El cliente envía una petición y el servidor entrega una respuesta.</p>
+</blockquote>
+<p>Para realizar una petición a un servidor, se requiere del método de la petición (verbo), de dónde se va realizar la petición y la versión del protocolo HTTP:</p>
+<p><code>GET /index.html HTTP/1.1</code></p>
+<p>Al realizar una petición, el servidor entrega una respuesta con la versión del protocolo HTTP solicitada, el código de respuesta y una breve descripción del código de respuesta:</p>
+<p><code>HTTP/1.1 200 OK</code></p>
+<h2>APIs RESTful</h2>
+<p><em>Las APIs RESTful (representational state tranfer) representan información.</em></p>
+<p>Características:</p>
+<ul>
+<li>Las APIs RESTful utilizan el protocolo HTTP para transferir información.</li>
+<li>Cada uno de los elementos de la web es un <strong><em>recurso</em></strong> y se representan en diferentes formatos (png, jpg, mp4, txt, pdf, xml, html, json, etc).</li>
+<li>Cada recurso se representa con un <strong><em>identificador único</em></strong> (URIs).</li>
+<li>Los recursos siempren deben ser accedidos a través de métodos HTTP estándar.</li>
+<li>Comunicaciones sin estado (al finalizar el proceso de comunicación, el servidor no sabe de donde se realizó la petición).</li>
+<li>Stateless (Cookies y JWT) - Son maneras de implementar comunicaciones con estado (el servidor sabe quien está realizando una petición).</li>
+<li><strong>Las APIs RESTful pueden responder en diferentes formatos para representar información</strong> (texto plano, csv, xml, json).</li>
+</ul>
+<h2>Métodos HTTP</h2>
+<ul>
+<li><code>GET</code> - Obtener información.</li>
+<li><code>POST</code> - Crear información.</li>
+<li><code>PUT</code> - Actualiza todo un recurso.</li>
+<li><code>PATCH</code> - Actualizar parcialmente un recurso.</li>
+<li><code>DELETE</code> - Borra un recurso.</li>
+<li><code>HEAD</code> - Identifica si un recurso existe.</li>
+<li><code>OPTIONS (CORS)</code> - Permite obtener permisos para realizar peticiones a otros dominios.</li>
+</ul>
+<h2>Idempotencia</h2>
+<p><em>Es la propiedad de cambiar o no cambiar información.</em> </p>
+<p>Cambia la información sobre el método:</p>
+<ul>
+<li><code>POST</code></li>
+</ul>
+<p>No cambia la información sobre los métodos:</p>
+<ul>
+<li><code>GET</code></li>
+<li><code>HEAD</code></li>
+<li><code>OPTIONS</code></li>
+<li><code>PUT</code></li>
+<li><code>PATCH</code></li>
+<li><code>DELETE</code></li>
+</ul>
+<h2>Códigos de respuesta</h2>
+<p><em>Es la manera de indentificar la respuesta del servidor en base a la petición que se está realizando.</em></p>
+<ul>
+<li>1xx - Informativas.</li>
+<li>2xx - Éxito.</li>
+<li>3xx - Redirección.</li>
+<li>4xx - Errores del cliente.</li>
+<li>5xx - Errores del servidor.</li>
+<li>&gt; 599 - Respuestas no oficiales del protocolo HTTP.</li>
+</ul>
+<h2>JWT</h2>
+<p><em>JSON Web Tokens, es un estándar para entregar credenciales de acceso.</em></p>
+<p>Partes:</p>
+<ul>
+<li><strong>Encabezado</strong>: es un JSON que incluye el algoritmo por el cual fué firmado el token y el tipo de token.</li>
+<li><strong>Payload</strong>: es un JSON que incluye datos o información que se quiere almacenar en un token.</li>
+<li><strong>Firma</strong>: verifica si un token es válido y si pertenece al servidor que generó el token.</li>
+</ul>
+<h2>Ejemplos de respuestas de una API</h2>
+<pre><code class="language-json">&quot;message&quot;: {
+    type: &quot;message&quot;,
+    code: 200,
+    description: &quot;OK&quot;
+},
+&quot;data&quot;: {
+    id: 8,
+    name: &quot;Ricardo&quot;,
+    lastName: &quot;García&quot;,
+    age: 23
+}
+</code></pre>
+<pre><code class="language-json">&quot;message&quot;: {
+    type: &quot;error&quot;,
+    code: 404,
+    description: &quot;No se encontró el usuario que está solicitando&quot;
+},
+data: []
+</code></pre>
+<h2>Parámetros</h2>
+<p><em>Se utilizan generalmente para enviar información que permita filtrar búsquedas.</em></p>
+<blockquote><p>Se representan por <code>clave = valor</code></p>
+</blockquote>
+<p>Por ejemplo:</p>
+<p><code>https://tudominio.com:8080/api/v1/users?limite=5&amp;pagina=5</code></p>
+<p><code>?limite=5</code> o <code>?limite=5&amp;pagina=5</code>, todos los parámetros que se requieran se separan por el símbolo ampersand (<code>&amp;</code>).</p>
+<h2>CORS</h2>
+<p><em>Es una protección que tienen los navegadores para que los usuarios no sean atacados con información proveniente de otros dominios diferentes al dominio de petición original.</em></p>
+<p>Desde el backend con el método <code>OPTIONS</code>,se define a que dominios el cliente solamente puede realizar peticiones a una API.</p>
+<h2>HATEOAS</h2>
+<ul>
+<li>Permiten identificar los recursos de una API sin necesidad de que el cliente conozca toda la documentación de una API RESTful.</li>
+<li>El cliente solo debe conocer la información del recurso principal y la navegación para otros recursos (se hace con la información que devuelve dicho recurso).</li>
+<li>Se utiliza con frecuencia en APIs públicas.</li>
+</ul>
+<p>Por ejemplo:</p>
+<pre><code class="language-json">&quot;message&quot;: {
+    type: &quot;message&quot;,
+    code: 200,
+    description: &quot;OK&quot;
+},
+&quot;data&quot;: {
+    id: 8,
+    name: &quot;Ricardo&quot;,
+    lastName: &quot;García&quot;,
+    age: 23
+},
+&quot;navegation&quot;: [
+    {
+        &quot;description&quot;: &quot;self&quot;,
+        &quot;link&quot;: &quot;/api/v1/users/8&quot;
+    },
+    {
+        &quot;description:&quot; &quot;resource&quot;,
+        &quot;link&quot;: &quot;/api/v1/users&quot;
+    }
+]
+</code></pre>
+<h2>Referencias</h2>
+<ul>
+<li><a href="https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto">Protocolo HTTP.</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/HTTP/CORS">Control de acceso HTTP (CORS).</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/HTTP/Status">Códigos de estado de respuesta HTTP.</a></li>
+<li><a href="https://jwt.io/">https://jwt.io/</a></li>
+<li><strong><em>Handler</em></strong> - Bloque de instrucciones de acción para una petición.</li>
+<li><strong><em>Middleware</em></strong> - Bloque de instrucciones que se ejecuta antes o después de procesar una petición.</li>
+</ul>
+</article>
+</main>
+<footer>
+<p>Copyright &copy; 2021-2022 - Ricardo García Jiménez<br>El contenido de este sitio web se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a></p>
+<p>Generated with <a href="https://github.com/ricardogj08/ssgs" target="_blank">ssgs</a>, a simple static blog generator written in POSIX sh</p>
+</footer>
+</body>
+</html>
