@@ -60,7 +60,7 @@ Link de la rutina:
 * 15 x 4 - Vuelo con mancuernas para hombros.
 * 15 x 4 - Bíceps sentado con mancuernas individual girando.
 * 15 x 4 - Copa para tríceps.
-* 15 x 4 - Sentadillas con barra.
+* 15 x 4 - Sentadillas con barra libre.
 * 30 x 4 - Pantorrillas de pie con las puntas rectas.
 * 25 x 4 - Abdomen clásico.
 
@@ -89,7 +89,7 @@ Circuito 3 (x4):
 
 Circuito 4 (x4):
 
-* 25 repeticiones - Pantorrillas en prensa con las puntas de los pies rectos, flexionadas.
+* 25 repeticiones - Pantorrillas en prensa con las puntas de los pies y piernas rectas.
 * 15 repeticiones - Pantorrilla individual con mancuernas de pie con las puntas rectas.
 
 Circuito 5 (x4):
@@ -108,20 +108,20 @@ Link de la rutina:
 Circuito 1 (x5):
 
 * 10 repeticiones - Press militar con mancuernas sentado para hombros.
-* 6 repeticiones (6 segundos) - Laterales con mancuernas de pie para hombros subiendo lento.
+* 6 repeticiones (6 segundos) - Laterales con mancuernas de pie para hombros subiendo lento (concéntrica).
 * 10 repeticiones - Press militar con mancuernas sentado para hombros. 
-* 6 repeticiones (6 segundos) - Laterales con mancuernas de pie para hombros bajando lento.
+* 6 repeticiones (6 segundos) - Laterales con mancuernas de pie para hombros bajando lento (excéntrica).
 * 10 repeticiones - Press militar con mancuernas sentado para hombros.
 * 20 segundos - Laterales con mancuernas de pie para hombros isométrico.
 
 Circuito 2 (x5):
 
 * 10 repeticiones - Barra al frente sentado para hombros.
-* 6 repeticiones (6 segundos) - Frontales con mancuernas para hombros subiendo lento.
+* 6 repeticiones (6 segundos) - Frontales con mancuernas para hombros subiendo lento (concéntrica).
 * 6 repeticiones (6 segundos) - Frontales con mancuernas para hombros bajando lento.
-* 10 repeticiones - Barra al frente sentado para hombros.
-* 6 repeticiones (6 segundos) - Vuelos posteriores con mancuernas para hombros subiendo lento.
-* 6 repeticiones (6 segundos) - Vuelos posteriores con mancuernas para hombros bajando lento.
+* 10 repeticiones - Barra al frente sentado para hombros (excéntrica).
+* 6 repeticiones (6 segundos) - Vuelos posteriores con mancuernas para hombros subiendo lento (concéntrica).
+* 6 repeticiones (6 segundos) - Vuelos posteriores con mancuernas para hombros bajando lento (excéntrica).
 
 ## Miércoles - Pecho/Bíceps
 
@@ -151,16 +151,16 @@ Link de la rutina:
 
 Circuito 1 (x5):
 
-* 10 repeticiones - Sentadillas con barra normales.
-* 6 repeticiones (6 segundos) - Sentadillas con barra subiendo lento.
-* 6 repeticiones (6 segundos) - Sentadillas con barra bajando lento.
-* 20 segundos - Sentadillas con barra en isometría.
+* 10 repeticiones - Sentadillas con barra libre.
+* 6 repeticiones (6 segundos) - Sentadillas con barra libre subiendo lento (concéntrica).
+* 6 repeticiones (6 segundos) - Sentadillas con barra libre bajando lento (excéntrica).
+* 20 segundos - Sentadillas con barra libre en isometría.
 
 Circuito 2 (x5):
 
 * 10 repeticiones - Prensa 45º pies al centro y puntas un poco abiertas, flexionadas, normales.
-* 6 repeticiones (6 segundos) - Prensa 45º pies al centro y puntas un poco abiertas, flexionadas, subiendo lento.
-* 6 repeticiones (6 segundos) - Prensa 45º pies al centro y puntas un poco abiertas, flexionadas, bajando lento.
+* 6 repeticiones (6 segundos) - Prensa 45º pies al centro y puntas un poco abiertas, flexionadas, subiendo lento (concéntrica).
+* 6 repeticiones (6 segundos) - Prensa 45º pies al centro y puntas un poco abiertas, flexionadas, bajando lento (excéntrica).
 * 20 segundos - Prensa 45º pies al centro y puntas un poco abiertas, flexionadas, en isometría.
 
 Circuito 3 (x3 continuo):
@@ -170,7 +170,7 @@ Circuito 3 (x3 continuo):
 
 Circuito 4 (x4):
 
-* 25 repeticiones - Pantorrillas en prensa con las puntas de los pies rectos, flexionadas.
+* 25 repeticiones - Pantorrillas en prensa con las puntas de los pies y piernas rectas.
 * 15 repeticiones - Pantorrilla individual con mancuernas de pie con las puntas rectas.
 
 Circuito 5 (x4):

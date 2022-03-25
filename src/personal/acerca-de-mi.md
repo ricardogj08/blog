@@ -8,6 +8,7 @@ Mi ruta de aprendizaje como desarrollador web Backend:
 * [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 * [MariaDB](https://mariadb.org/)
 * [PHP](https://www.php.net/)
+* [Lumen](https://lumen.laravel.com/docs/)
 * [Laravel](https://laravel.com/)
 * [MoonScript](https://moonscript.org/)
 * [Lapis](https://leafo.net/lapis/)
