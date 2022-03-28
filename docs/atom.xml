@@ -2,13 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
 <id>https://ricardogj08.github.io/blog/atom.xml</id>
 <title>La bitácora de un Ñu</title>
-<updated>2022-03-28T02:57:25Z</updated>
+<updated>2022-03-28T17:15:59Z</updated>
 <author>
   <name>La bitácora de un Ñu</name>
 </author>
 <link rel="self" href="https://ricardogj08.github.io/blog/atom.xml" type="application/atom+xml"/>
 <link rel="alternate" href="https://ricardogj08.github.io/blog/"/>
-<generator uri="https://github.com/ricardogj08/ssgs" version="1.1">ssgs</generator>
+<generator uri="https://github.com/ricardogj08/ssgs" version="1.2">ssgs</generator>
+<entry>
+  <id>https://ricardogj08.github.io/blog/personal/gym/2022-rutina.html</id>
+  <title>&#x1F4AA; Rutina del gym 2022</title>
+  <updated>2022-03-28T17:15:54Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/gym/2022-rutina.html"/>
+</entry>
+<entry>
+  <id>https://ricardogj08.github.io/blog/software/git-annex.html</id>
+  <title>&#x1F5C3; git-annex</title>
+  <updated>2022-03-28T17:04:57Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/software/git-annex.html"/>
+</entry>
+<entry>
+  <id>https://ricardogj08.github.io/blog/personal/acerca-de-mi.html</id>
+  <title>&#x1F4BC; Acerca de mí</title>
+  <updated>2022-03-28T16:49:33Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/acerca-de-mi.html"/>
+</entry>
+<entry>
+  <id>https://ricardogj08.github.io/blog/personal/contacto.html</id>
+  <title>&#x1F4AC; Contacto</title>
+  <updated>2022-03-28T16:39:40Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/contacto.html"/>
+</entry>
 <entry>
   <id>https://ricardogj08.github.io/blog/programacion/moonscript/01-instalacion.html</id>
   <title>01 - Instalación de MoonScript</title>
@@ -37,24 +73,6 @@
   <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/metas.html"/>
 </entry>
 <entry>
-  <id>https://ricardogj08.github.io/blog/personal/gym/2022-rutina.html</id>
-  <title>&#x1F4AA; Rutina del gym 2022</title>
-  <updated>2022-03-28T02:28:28Z</updated>
-  <author>
-    <name>La bitácora de un Ñu</name>
-  </author>
-  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/gym/2022-rutina.html"/>
-</entry>
-<entry>
-  <id>https://ricardogj08.github.io/blog/personal/acerca-de-mi.html</id>
-  <title>Acerca de mí</title>
-  <updated>2022-03-24T18:29:18Z</updated>
-  <author>
-    <name>La bitácora de un Ñu</name>
-  </author>
-  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/acerca-de-mi.html"/>
-</entry>
-<entry>
   <id>https://ricardogj08.github.io/blog/programacion/microservicios/microservicios.html</id>
   <title>Introducción a la arquitectura de microservicios</title>
   <updated>2022-03-24T16:14:37Z</updated>
@@ -71,24 +89,6 @@
     <name>La bitácora de un Ñu</name>
   </author>
   <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/animes.html"/>
-</entry>
-<entry>
-  <id>https://ricardogj08.github.io/blog/personal/contacto.html</id>
-  <title>Contacto</title>
-  <updated>2022-03-12T17:57:01Z</updated>
-  <author>
-    <name>La bitácora de un Ñu</name>
-  </author>
-  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/contacto.html"/>
-</entry>
-<entry>
-  <id>https://ricardogj08.github.io/blog/software/git-annex.html</id>
-  <title>git-annex</title>
-  <updated>2022-03-12T17:57:01Z</updated>
-  <author>
-    <name>La bitácora de un Ñu</name>
-  </author>
-  <link rel="alternate" href="https://ricardogj08.github.io/blog/software/git-annex.html"/>
 </entry>
 <entry>
   <id>https://ricardogj08.github.io/blog/gnu-linux/instalacion-archlinux.html</id>

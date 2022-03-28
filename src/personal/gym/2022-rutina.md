@@ -10,7 +10,7 @@
 
 ## Iniciación
 
-> 2 ejercicios por musculo por rutina del día en 1 mes.
+> 2 ejercicios por musculo por rutina del día en 1 mes con peso ligero.
 
 ### Semana 1
 

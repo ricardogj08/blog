@@ -1,4 +1,4 @@
-# Acerca de mí
+# &#x1F4BC; Acerca de mí
 
 Mi ruta de aprendizaje como desarrollador web Backend:
 
