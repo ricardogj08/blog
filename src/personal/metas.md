@@ -1,4 +1,4 @@
-# 🎯 Metas
+# &#x1F3AF; Metas
 
 ## Metas 2022
 
@@ -13,6 +13,7 @@
 * \[ \] - Leer la documentación de [PHP](https://www.php.net/manual/es/).
 * \[ \] - Desarrollar una API RESTful para gestionar encuestas como proyecto de mis prácticas profesionales con [Lumen](https://lumen.laravel.com/docs/) (un framework de desarrollo web para `PHP`).
 * \[ \] - Reemplazar [Git](https://git-scm.com/) con [Gitless](https://github.com/goldstar611/gitless).
+* \[ \] - Renovar mi licencia de conducir.
 * \[ \] - Actualizar [mi lista de programas](https://github.com/ricardogj08/awesome-kiss).
 * \[ \] - Personalizar mi espacio de trabajo con `Wayland`.
 * \[ \] - Formatear y configurar mi servidor con [Arch Linux ARM](https://archlinuxarm.org/).
