@@ -78,28 +78,24 @@ Partes:
 
 ## Ejemplos de respuestas de una API
 
-```json
-"message": {
-    type: "message",
-    code: 200,
-    description: "OK"
-},
-"data": {
-    id: 8,
-    name: "Ricardo",
-    lastName: "García",
-    age: 23
-}
-```
+    "message": {
+        type: "message",
+        code: 200,
+        description: "OK"
+    },
+    "data": {
+        id: 8,
+        name: "Ricardo",
+        lastName: "García",
+        age: 23
+    }
 
-```json
-"message": {
-    type: "error",
-    code: 404,
-    description: "No se encontró el usuario que está solicitando"
-},
-data: []
-```
+    "message": {
+        type: "error",
+        code: 404,
+        description: "No se encontró el usuario que está solicitando"
+    },
+    data: []
 
 ## Parámetros
 
@@ -127,29 +123,27 @@ Desde el backend con el método `OPTIONS`,se define a que dominios el cliente so
 
 Por ejemplo:
 
-```json
-"message": {
-    type: "message",
-    code: 200,
-    description: "OK"
-},
-"data": {
-    id: 8,
-    name: "Ricardo",
-    lastName: "García",
-    age: 23
-},
-"navegation": [
-    {
-        "description": "self",
-        "link": "/api/v1/users/8"
+    "message": {
+        type: "message",
+        code: 200,
+        description: "OK"
     },
-    {
-        "description:" "resource",
-        "link": "/api/v1/users"
-    }
-]
-```
+    "data": {
+        id: 8,
+        name: "Ricardo",
+        lastName: "García",
+        age: 23
+    },
+    "navegation": [
+        {
+            "description": "self",
+            "link": "/api/v1/users/8"
+        },
+        {
+            "description:" "resource",
+            "link": "/api/v1/users"
+        }
+    ]
 
 ## Referencias
 

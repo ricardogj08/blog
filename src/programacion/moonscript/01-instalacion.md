@@ -13,10 +13,8 @@ Puedes utilizar toda la potencia de Lua en MoonScript con una sintaxis aún más
 
 ¿Y como instalo MoonScript?, para sistemas basados en Arch Linux solo debes ejecutar los siguientes comandos con privilegios de administrador:
 
-```shell
-# pacman -S gcc lua51 luarocks
-# luarocks --lua-version 5.1 install moonscript
-```
+    # pacman -S gcc lua51 luarocks
+    # luarocks --lua-version 5.1 install moonscript
 
 Se proporcionaran los ejecutables:
 

@@ -74,7 +74,7 @@
 <li>3xx - Redirección.</li>
 <li>4xx - Errores del cliente.</li>
 <li>5xx - Errores del servidor.</li>
-<li>&gt; 599 - Respuestas no oficiales del protocolo HTTP.</li>
+<li>> 599 - Respuestas no oficiales del protocolo HTTP.</li>
 </ul>
 <h2>JWT</h2>
 <p><em>JSON Web Tokens, es un estándar para entregar credenciales de acceso.</em></p>
@@ -85,7 +85,7 @@
 <li><strong>Firma</strong>: verifica si un token es válido y si pertenece al servidor que generó el token.</li>
 </ul>
 <h2>Ejemplos de respuestas de una API</h2>
-<pre><code class="language-json">&quot;message&quot;: {
+<pre><code>&quot;message&quot;: {
     type: &quot;message&quot;,
     code: 200,
     description: &quot;OK&quot;
@@ -97,7 +97,7 @@
     age: 23
 }
 </code></pre>
-<pre><code class="language-json">&quot;message&quot;: {
+<pre><code>&quot;message&quot;: {
     type: &quot;error&quot;,
     code: 404,
     description: &quot;No se encontró el usuario que está solicitando&quot;
@@ -121,7 +121,7 @@ data: []
 <li>Se utiliza con frecuencia en APIs públicas.</li>
 </ul>
 <p>Por ejemplo:</p>
-<pre><code class="language-json">&quot;message&quot;: {
+<pre><code>&quot;message&quot;: {
     type: &quot;message&quot;,
     code: 200,
     description: &quot;OK&quot;

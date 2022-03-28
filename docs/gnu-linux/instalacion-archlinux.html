@@ -25,20 +25,22 @@
 <p><code>loadkeys es</code></p>
 <p><code>loadkeys la-latin1</code></p>
 <p>Conexión por wifi:</p>
-<pre><code class="language-shell"># iwctl
+<p><code>`shell
+# iwctl
 &gt; device list
 &gt; station DISPOSITIVO scan
 &gt; station DISPOSITIVO get-networks
 &gt; station DISPOSITIVO connect RED
 &gt; station DISPOSITIVO show
 &gt; quit
-</code></pre>
+</code>`</p>
 <p>Verificar la conexión:</p>
 <p><code># ping -c 5 archlinux.org</code></p>
 <p>Actualizar el reloj del sistema:</p>
-<pre><code class="language-shell"># ln -sf /usr/share/zoneinfo/REGIÓN/CIUDAD /etc/localtime
+<p><code>`shell
+# ln -sf /usr/share/zoneinfo/REGIÓN/CIUDAD /etc/localtime
 # timedatectl set-ntp 1
-</code></pre>
+</code>`</p>
 <p>Identificar el nombre de la unidad de almacenamiento:</p>
 <p><code># lsblk</code></p>
 <p>Borrar la tabla de particiones:</p>
@@ -75,20 +77,23 @@
 </tr>
 </table></p>
 <p>Formatear las particiones:</p>
-<pre><code class="language-shell"># mkfs.ext4 /dev/sda1
+<p><code>`shell
+# mkfs.ext4 /dev/sda1
 # mkfs.ext4 /dev/sda3
-</code></pre>
+</code>`</p>
 <p>Partición <code>EFI</code>:</p>
 <p><code># mkfs.fat -F 12 /dev/sda2</code></p>
 <p>Monta la partición <code>raíz</code> y <code>boot</code>:</p>
-<pre><code class="language-shell"># mount /dev/sda3 /mnt
+<p><code>`shell
+# mount /dev/sda3 /mnt
 # mkdir /mnt/boot
 # mount /dev/sda1 /mnt/boot
-</code></pre>
+</code>`</p>
 <p>Partición <code>EFI</code>:</p>
-<pre><code># mkdir /mnt/boot/efi
+<p><code>`
+# mkdir /mnt/boot/efi
 # mount /dev/sda2 /mnt/boot/efi
-</code></pre>
+</code>`</p>
 <p><code># lsblk -f /dev/sda</code></p>
 <p><code># nano  /etc/pacman.d/mirrorlist</code></p>
 <p><code># free -h</code></p>
@@ -116,54 +121,64 @@
 </tr>
 </table></p>
 <p>Consulte el tamaño de los bloques recomendado de tu ordenador en bytes para generar el archivo <code>swap</code>:</p>
-<pre><code class="language-shell"># stat -fc %s .
-</code></pre>
+<p><code>`shell
+# stat -fc %s .
+</code>`</p>
 <p>Genera un archivo <code>swap</code>:</p>
-<pre><code class="language-shell"># dd if=/dev/zero of=/mnt/swapfile bs=TAMAÑO count=BLOQUES
+<p><code>`shell
+# dd if=/dev/zero of=/mnt/swapfile bs=TAMAÑO count=BLOQUES
 # chmod 600 /mnt/swapfile
-</code></pre>
+</code>`</p>
 <blockquote><p><code>TAMAÑO</code> y <code>BLOQUES</code> pueden tomar los sufijos b (512 bytes), kB (1,000 bytes), k (1,024 bytes), MB (1,000 kB), M (1,000 k), GB (1,000,000 kB) o G (1,000,000 k).</p>
 <p>Para bloques de 4096 bytes (4k) y 8GB (4k * 2M) en RAM:</p>
 <p><code># dd if=/dev/zero of=/mnt/swapfile bs=4k count=2M # Genera un archivo swap de 8GB</code></p>
 </blockquote>
 <p>Formatea y activa el archivo <code>swap</code>:</p>
-<pre><code class="language-shell"># mkswap /mnt/swapfile
+<p><code>`shell
+# mkswap /mnt/swapfile
 # swapon /mnt/swapfile
-</code></pre>
+</code>`</p>
 <p>Instalar:</p>
 <p><code># pacstrap /mnt base linux-lts linux-firmware</code></p>
 <p><code># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code></p>
 <p><code># arch-chroot /mnt</code></p>
-<pre><code class="language-shell"># ln -sf /usr/share/zoneinfo/REGIÓN/CIUDAD /etc/localtime
+<p><code>`shell
+# ln -sf /usr/share/zoneinfo/REGIÓN/CIUDAD /etc/localtime
 # timedatectl set-ntp 1
 # hwclock --systohc --utc
 # date
-</code></pre>
+</code>`</p>
 <p>Instalar un editor de textos:</p>
 <p><code># pacman -S nano nano-syntax-highlighting</code></p>
 <p>Editar <code>/etc/locale.gen</code>:</p>
-<pre><code>#es_HN ISO-8859-1
+<p><code>`
+#es_HN ISO-8859-1
 es_MX.UTF-8
 #es_MX ISO-8859-1
-</code></pre>
-<pre><code># locale-gen
+</code>`</p>
+<p><code>`
+# locale-gen
 # export LANG=es_MX.UTF-8
-</code></pre>
+</code>`</p>
 <p><code>/etc/locale.conf</code></p>
-<pre><code>LANG=es_MX.UTF-8
-</code></pre>
+<p><code>`
+LANG=es_MX.UTF-8
+</code>`</p>
 <p><code>/etc/vconsole.conf</code></p>
-<pre><code>KEYMAP=es
+<p><code>`
+KEYMAP=es
 KEYMAP=la-latin1
-</code></pre>
+</code>`</p>
 <p>Nombre del equipo:</p>
-<pre><code>echo NOMBRE &gt; /etc/hostname
-</code></pre>
+<p><code>`
+echo NOMBRE &gt; /etc/hostname
+</code>`</p>
 <p>Editar <code>/etc/hosts</code>:</p>
-<pre><code class="language-text">127.0.0.1   localhost
+<p><code>`text
+127.0.0.1   localhost
 ::1         localhost
 127.0.1.1   NOMBRE
-</code></pre>
+</code>`</p>
 <p>Cambiar contraseña:</p>
 <p><code># passwd root</code></p>
 <p><code># mkinitcpio -P</code></p>
@@ -174,97 +189,107 @@ KEYMAP=la-latin1
 <p>grub para <code>BIOS</code>:</p>
 <p><code># grub-install --target=i386-pc /dev/sda</code></p>
 <p>grub para <code>UEFI</code>:</p>
-<pre><code class="language-shell"># grub-install --target=x86_64-efi \
+<p><code>`shell
+# grub-install --target=x86_64-efi \
 &gt; --efi-directory=/boot/efi \
 &gt; --bootloader-id=GRUB
-</code></pre>
+</code>`</p>
 <p>Genera un archivo de configuración para grub:</p>
 <p><code># grub-mkconfig -o /boot/grub/grub.cfg</code></p>
 <p>Manuales:</p>
 <p><code># pacman -S mandoc</code></p>
 <p>Gestor wifi:</p>
 <p><code># pacman -S iwd</code></p>
-<pre><code class="language-shell"># exit
+<p><code>`shell
+# exit
 # swapoff -a
 # umount -R /mnt
 # reboot
-</code></pre>
-<pre><code class="language-text">* Login: root
+</code>`</p>
+<p><code>`text
+* Login: root
 * Password: ******
-</code></pre>
+</code>`</p>
 <p>Identificar el nombre de los dispositivos de red:</p>
 <p><code># ip link</code></p>
 <p>Archivo de configuración para cada uno de las dispositivos de red:</p>
 <p>/etc/systemd/network/wlan0.network</p>
-<pre><code class="language-text">[Match]
-Name=wlan0
-
-[Network]
+<p><code></code>`text
+[Match]
+Name=wlan0</p>
+<p>[Network]
 DHCP=yes
-</code></pre>
+<code></code>`</p>
 <p>/etc/systemd/network/enp1s0.network</p>
-<pre><code class="language-text">[Match]
-Name=enp1s0
-
-[Network]
+<p><code></code>`text
+[Match]
+Name=enp1s0</p>
+<p>[Network]
 DHCP=yes
-</code></pre>
-<pre><code># systemctl enable systemd-resolved.service
+<code></code>`</p>
+<p><code>`
+# systemctl enable systemd-resolved.service
 # systemctl start systemd-resolved.service
 # ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 # systemctl enable systemd-networkd.service
 # systemctl start systemd-networkd.service
 # systemctl status systemd-networkd.service
-</code></pre>
+</code>`</p>
 <p>Para wifi <code>/etc/iwd/main.conf</code>:</p>
 <p><code># mkdir /etc/iwd</code></p>
-<pre><code class="language-text">[General]
+<p><code></code>`text
+[General]
 EnableNetworkConfiguration=true
-UseDefaultInterface=true
-
-[Network]
+UseDefaultInterface=true</p>
+<p>[Network]
 RoutePriorityOffset=200
-NameResolvingService=systemd
-
-[Scan]
+NameResolvingService=systemd</p>
+<p>[Scan]
 DisablePeriodicScan=true
-</code></pre>
-<pre><code class="language-shell"># systemctl enable iwd.service
+<code></code>`</p>
+<p><code>`shell
+# systemctl enable iwd.service
 # systemctl start iwd.service
 # systemctl status iwd.service
-</code></pre>
-<pre><code class="language-shell"># iwctl
+</code>`</p>
+<p><code>`shell
+# iwctl
 &gt; device list
 &gt; station DISPOSITIVO scan
 &gt; station DISPOSITIVO get-networks
 &gt; station DISPOSITIVO connect RED
 &gt; station DISPOSITIVO show
 &gt; quit
-</code></pre>
+</code>`</p>
 <p>Verificar la conexión:</p>
 <p><code># ping -c 5 archlinux.org</code></p>
 <p>Crear un nuevo usuario:</p>
-<pre><code class="language-shell"># useradd -m -G games,uucp,wheel,lp,audio,disk,floppy,input,kvm,optical,scanner,storage,video,network,power -s /bin/bash USUARIO
+<p><code>`shell
+# useradd -m -G games,uucp,wheel,lp,audio,disk,floppy,input,kvm,optical,scanner,storage,video,network,power -s /bin/bash USUARIO
 # passwd USUARIO
-</code></pre>
+</code>`</p>
 <p>Cerrar sesión:</p>
-<pre><code class="language-shell"># exit
-</code></pre>
+<p><code>`shell
+# exit
+</code>`</p>
 <p>Temperatura:</p>
-<pre><code class="language-shell">$ su -c 'pacman -S thermald'
+<p><code>`shell
+$ su -c 'pacman -S thermald'
 $ su -c 'systemctl enable thermald.service'
 $ su -c 'systemctl start thermald.service'
-</code></pre>
+</code>`</p>
 <p>Sonido:</p>
-<pre><code class="language-shell">$ su -c 'pacman -S alsa-utils'
+<p><code>`shell
+$ su -c 'pacman -S alsa-utils'
 $ amixer sset Master unmute
 $ amixer sset Master 80
 $ speaker-test -c 2
-</code></pre>
+</code>`</p>
 <p>Editar <code>/etc/pacman.conf</code></p>
-<pre><code>[multilib]
+<p><code>`
+[multilib]
 Include = /etc/pacman.d/mirrorlist
-</code></pre>
+</code>`</p>
 <ul>
 <li>https://github.com/goldstar611/gitless</li>
 </ul>
@@ -291,22 +316,25 @@ Include = /etc/pacman.d/mirrorlist
 <p>Procesos:</p>
 <p><code>$ su -c 'pacman -S htop'</code></p>
 <p>Impresoras:</p>
-<pre><code class="language-shell">$ su -c 'pacman -S cups cups-pdf usbutils foomatic-db-engine foomatic-db foomatic-db-nonfree system-config-printer'
+<p><code>`shell
+$ su -c 'pacman -S cups cups-pdf usbutils foomatic-db-engine foomatic-db foomatic-db-nonfree system-config-printer'
 $ su -c 'systemctl enable cups.service'
 $ su -c 'systemctl start cups.service'
-</code></pre>
+</code>`</p>
 <p>Scanner:</p>
-<pre><code class="language-shell">$ su -c 'pacman -S sane-airscan ipp-usb simple-scan'
+<p><code>`shell
+$ su -c 'pacman -S sane-airscan ipp-usb simple-scan'
 $ su -c 'systemctl enable ipp-usb.service'
 $ su -c 'systemctl start ipp-usb.service'
-</code></pre>
+</code>`</p>
 <p>Cortafuegos:</p>
-<pre><code class="language-shell">$ su -c 'pacman -S ufw'
+<p><code>`shell
+$ su -c 'pacman -S ufw'
 $ su -c 'systemctl enable ufw.service'
 $ su -c 'systemctl start ufw.service'
 $ su -c 'ufw default deny'
 $ su -c 'ufw enable'
-</code></pre>
+</code>`</p>
 <h2>Referencias</h2>
 <ul>
 <li><a href="https://wiki.archlinux.org/title/installation_guide">Guía de instalación de Arch Linux.</a></li>
@@ -314,27 +342,27 @@ $ su -c 'ufw enable'
 <li><a href="https://docs.fedoraproject.org/en-US/fedora/f35/install-guide/install/Installing_Using_Anaconda/#sect-installation-gui-manual-partitioning-recommended">Esquema de particiones recomendada por Fedora.</a></li>
 <li>https://wiki.archlinux.org/title/EFI<em>system</em>partition</li>
 <li>https://wiki.archlinux.org/title/swap</li>
-<li>https://wiki.archlinux.org/title/Network<em>configuration#Set</em>the<em></em>ostname</li>
+<li>https://wiki.archlinux.org/title/Network<em>configuration#Set</em>the_hostname</li>
 <li>https://wiki.archlinux.org/title/GRUB</li>
 <li>https://wiki.archlinux.org/title/systemd-networkd</li>
 <li>https://wiki.archlinux.org/title/Systemd-resolved</li>
 <li>https://wiki.archlinux.org/title/Iwd</li>
 <li>https://kisslinux.org/wiki/pkg/eiwd</li>
 <li>https://wiki.archlinux.org/title/users<em>and</em>groups</li>
-<li>https://wiki.archlinux.org/title/official<em></em>epositories#multilib</li>
+<li>https://wiki.archlinux.org/title/official_repositories#multilib</li>
 <li>https://wiki.archlinux.org/title/wayland</li>
 <li>https://wiki.archlinux.org/title/fonts</li>
-<li>https://wiki.archlinux.org/title/file<em></em>ystems</li>
+<li>https://wiki.archlinux.org/title/file_systems</li>
 <li>https://wiki.archlinux.org/title/firefox</li>
 <li>https://wiki.archlinux.org/title/libinput</li>
 <li>https://man.archlinux.org/man/libinput.4</li>
-<li>https://wiki.archlinux.org/title/Xorg/Keyboard<em></em>onfiguration</li>
+<li>https://wiki.archlinux.org/title/Xorg/Keyboard_configuration</li>
 <li>https://wiki.archlinux.org/title/LibreOffice</li>
-<li>https://wiki.archlinux.org/title/Language<em></em>hecking</li>
+<li>https://wiki.archlinux.org/title/Language_checking</li>
 <li>https://wiki.archlinux.org/title/List<em>of</em>applications</li>
 <li>https://wiki.archlinux.org/title/CUPS</li>
 <li>https://wiki.archlinux.org/title/SANE</li>
-<li>https://wiki.archlinux.org/title/Uncomplicated<em></em>irewall</li>
+<li>https://wiki.archlinux.org/title/Uncomplicated_Firewall</li>
 </ul>
 </article>
 </main>
