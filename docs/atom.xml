@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
 <id>https://ricardogj08.github.io/blog/atom.xml</id>
-<title>🐰 Conejito Geek</title>
-<updated>2025-01-20T05:09:31Z</updated>
+<title>🐰 El Conejito Geek</title>
+<updated>2025-01-20T05:14:38Z</updated>
 <author>
-  <name>🐰 Conejito Geek</name>
+  <name>🐰 El Conejito Geek</name>
   <uri>https://ricardogj08.github.io/blog</uri>
 </author>
 <link rel="self" href="https://ricardogj08.github.io/blog/atom.xml" type="application/atom+xml"/>
@@ -15,7 +15,7 @@
   <title>🚀 Proyectos</title>
   <updated>2025-01-20T04:32:20Z</updated>
   <author>
-    <name>🐰 Conejito Geek</name>
+    <name>🐰 El Conejito Geek</name>
     <uri>https://ricardogj08.github.io/blog</uri>
   </author>
   <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/proyectos.html" type="text/html"/>
@@ -25,7 +25,7 @@
   <title>🎮 PS1</title>
   <updated>2025-01-20T03:17:26Z</updated>
   <author>
-    <name>🐰 Conejito Geek</name>
+    <name>🐰 El Conejito Geek</name>
     <uri>https://ricardogj08.github.io/blog</uri>
   </author>
   <link rel="alternate" href="https://ricardogj08.github.io/blog/games/ps1.html" type="text/html"/>
