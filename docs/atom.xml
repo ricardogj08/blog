@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+<id>https://ricardogj08.github.io/blog/atom.xml</id>
+<title>La bitácora de un Ñu</title>
+<updated>2025-01-20T04:15:26Z</updated>
+<author>
+  <name>La bitácora de un Ñu</name>
+  <uri>https://ricardogj08.github.io/blog</uri>
+</author>
+<link rel="self" href="https://ricardogj08.github.io/blog/atom.xml" type="application/atom+xml"/>
+<link rel="alternate" href="https://ricardogj08.github.io/blog" type="text/html"/>
+<generator uri="https://notabug.org/ricardogj08/ssgs" version="3.0">ssgs</generator>
+<entry>
+  <id>https://ricardogj08.github.io/blog/personal/proyectos.html</id>
+  <title>🚀 Proyectos</title>
+  <updated>2025-01-20T04:14:48Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+    <uri>https://ricardogj08.github.io/blog</uri>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/personal/proyectos.html" type="text/html"/>
+</entry>
+<entry>
+  <id>https://ricardogj08.github.io/blog/games/ps1.html</id>
+  <title>🎮 PS1</title>
+  <updated>2025-01-20T03:17:26Z</updated>
+  <author>
+    <name>La bitácora de un Ñu</name>
+    <uri>https://ricardogj08.github.io/blog</uri>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/games/ps1.html" type="text/html"/>
+</entry>
+</feed>
