@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
 <id>https://ricardogj08.github.io/blog/atom.xml</id>
 <title>🐰 El Conejito Geek</title>
-<updated>2025-01-22T21:28:15Z</updated>
+<updated>2025-01-31T22:18:10Z</updated>
 <author>
   <name>🐰 El Conejito Geek</name>
   <uri>https://ricardogj08.github.io/blog</uri>
@@ -10,6 +10,16 @@
 <link rel="self" href="https://ricardogj08.github.io/blog/atom.xml" type="application/atom+xml"/>
 <link rel="alternate" href="https://ricardogj08.github.io/blog" type="text/html"/>
 <generator uri="https://notabug.org/ricardogj08/ssgs" version="3.0">ssgs</generator>
+<entry>
+  <id>https://ricardogj08.github.io/blog/software/ollama.html</id>
+  <title>🦙 Ollama</title>
+  <updated>2025-01-31T22:16:53Z</updated>
+  <author>
+    <name>🐰 El Conejito Geek</name>
+    <uri>https://ricardogj08.github.io/blog</uri>
+  </author>
+  <link rel="alternate" href="https://ricardogj08.github.io/blog/software/ollama.html" type="text/html"/>
+</entry>
 <entry>
   <id>https://ricardogj08.github.io/blog/personal/libros.html</id>
   <title>📕 Libros</title>
