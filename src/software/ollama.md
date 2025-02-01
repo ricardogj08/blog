@@ -53,7 +53,7 @@ ollama serve
 ollama run MODELO
 
 # Ejemplo
-ollama run deepseek-r1:7b
+ollama run deepseek-r1:1.5b
 ```
 
 > Puedes encontrar un listado completo de modelos de lenguaje soportados por `ollama`: <https://ollama.com/search>
@@ -66,7 +66,7 @@ ollama run deepseek-r1:7b
 ollama pull MODELO
 
 # Ejemplo
-ollama pull deepseek-r1:7b
+ollama pull deepseek-r1:1.5b
 ```
 
 > Lo que se encuentra del lado derecho de dos puntos `:` representa la versión o variante del modelo del lenguaje que selecciones.
@@ -87,7 +87,7 @@ ollama ls
 ollama show MODELO
 
 # Ejemplo
-ollama show deepseek-r1:7b
+ollama show deepseek-r1:1.5b
 ```
 
 * Lista todos los modelos de lenguaje instalados en ejecución:
@@ -102,7 +102,7 @@ ollama ps
 ollama stop MODELO
 
 # Ejemplo
-ollama stop deepseek-r1:7b
+ollama stop deepseek-r1:1.5b
 ```
 
 * Copia o duplica un modelo de lenguaje instalado:
@@ -111,7 +111,7 @@ ollama stop deepseek-r1:7b
 ollama cp MODELO OTRO_MODELO
 
 # Ejemplo
-ollama cp deepseek-r1:7b mi_deepseek
+ollama cp deepseek-r1:1.5b mi_deepseek
 ```
 
 > No afecta al modelo del lenguaje original instalado.
@@ -122,7 +122,7 @@ ollama cp deepseek-r1:7b mi_deepseek
 ollama rm MODELO
 
 # Ejemplo
-ollama rm deepseek-r1:7b
+ollama rm deepseek-r1:1.5b
 ```
 
 * Crea o importa un modelo de lenguaje personalizado a través de un archivo (por defecto `Modelfile`):
