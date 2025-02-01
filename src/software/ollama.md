@@ -14,6 +14,16 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 > Probado correctamente en Slackware 15.0
 
+* Comprueba su instalación consultando la versión de `ollama` instalado:
+
+```
+# Opción 1
+ollama -v
+
+# Opción 2
+ollama --version
+```
+
 ## Primeros pasos
 
 * Muestra un mensaje de ayuda acerca de los comandos disponibles:
