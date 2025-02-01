@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
 <id>https://ricardogj08.github.io/blog/atom.xml</id>
 <title>🐰 El Conejito Geek</title>
-<updated>2025-02-01T05:07:59Z</updated>
+<updated>2025-02-01T05:32:47Z</updated>
 <author>
   <name>🐰 El Conejito Geek</name>
   <uri>https://ricardogj08.github.io/blog</uri>
@@ -13,7 +13,7 @@
 <entry>
   <id>https://ricardogj08.github.io/blog/software/ollama.html</id>
   <title>🦙 Ollama</title>
-  <updated>2025-02-01T05:07:53Z</updated>
+  <updated>2025-02-01T05:32:41Z</updated>
   <author>
     <name>🐰 El Conejito Geek</name>
     <uri>https://ricardogj08.github.io/blog</uri>

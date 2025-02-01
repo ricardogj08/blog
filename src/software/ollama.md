@@ -69,6 +69,8 @@ ollama pull MODELO
 ollama pull deepseek-r1:7b
 ```
 
+> Lo que se encuentra del lado derecho de dos puntos `:` representa la versión o variante del modelo del lenguaje que selecciones.
+
 * Lista todos los modelos de lenguaje instalados en el equipo:
 
 ```
@@ -143,5 +145,5 @@ ollama push MI_MODELO
 
 ## Referencias
 
-* [Sitio web ofifical de Ollama.](https://ollama.com/)
+* [Sitio web oficial de Ollama.](https://ollama.com/)
 * [Repositorio oficial de Ollama.](https://github.com/ollama/ollama)
