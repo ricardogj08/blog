@@ -69,7 +69,7 @@ ollama pull MODELO
 ollama pull deepseek-r1:1.5b
 ```
 
-> Lo que se encuentra del lado derecho de dos puntos `:` representa la versión o variante del modelo del lenguaje que selecciones.
+> Lo que se encuentra del lado derecho de los dos puntos `:` representa la versión o variante del modelo de lenguaje que selecciones.
 
 * Lista todos los modelos de lenguaje instalados en el equipo:
 
@@ -114,7 +114,7 @@ ollama cp MODELO OTRO_MODELO
 ollama cp deepseek-r1:1.5b mi_deepseek
 ```
 
-> No afecta al modelo del lenguaje original instalado.
+> No afecta al modelo de lenguaje original instalado.
 
 * Elimina un modelo de lenguaje instalado:
 
